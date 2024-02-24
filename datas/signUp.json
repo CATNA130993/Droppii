@@ -3,7 +3,7 @@
         {
             "firstName": "Automation First Name",
             "lastName": "Automation Last Name",
-            "email": "catna46@vcatna.com",
+            "email": "catna47@vcatna.com",
             "password": "$Abc@1234%",
             "confirmPassword": "$Abc@1234%",
             "expected": "Thank you for registering with Main Website Store."
