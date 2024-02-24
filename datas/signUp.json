@@ -1,0 +1,113 @@
+{
+    "TestCaseValid": [
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna46@vcatna.com",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "Thank you for registering with Main Website Store."
+        }
+    ],
+    "TestCaseInvalid": [
+        {
+            "firstName": "",
+            "lastName": "Automation Last Name",
+            "email": "catna@vcatna.com",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "This is a required field."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "",
+            "email": "catna@vcatna.com",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "This is a required field."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "This is a required field."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna@vcatna.com",
+            "password": "",
+            "confirmPassword": "$Abc@1234%",
+            "expected": [
+                "This is a required field.",
+                "Please enter the same value again."
+            ]
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna@vcatna.com",
+            "password": "$Abc@1234%",
+            "confirmPassword": "",
+            "expected": "This is a required field."
+        },
+        {
+            "firstName": "",
+            "lastName": "",
+            "email": "",
+            "password": "",
+            "confirmPassword": "",
+            "expected": "This is a required field."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna32@vcatna.com",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "There is already an account with this email address. If you are sure that it is your email address, click here to get your password and access your account."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "a",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "a@a",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "a@a.a",
+            "password": "$Abc@1234%",
+            "confirmPassword": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna@vcatna.com",
+            "password": "a",
+            "confirmPassword": "a",
+            "expected": "Minimum length of this field must be equal or greater than 8 symbols. Leading and trailing spaces will be ignored."
+        },
+        {
+            "firstName": "Automation First Name",
+            "lastName": "Automation Last Name",
+            "email": "catna@vcatna.com",
+            "password": "12345678",
+            "confirmPassword": "12345678",
+            "expected": "Minimum of different classes of characters in password is 3. Classes of characters: Lower Case, Upper Case, Digits, Special Characters."
+        }        
+    ]
+}

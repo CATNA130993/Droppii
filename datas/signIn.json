@@ -1,0 +1,54 @@
+{
+    "TestCaseValid": [
+        {
+            "email": "catna@vcatna.com",
+            "password": "$Abc@1234%",
+            "expected": "Welcome, Automation First Name Automation Last Name!"
+        }
+    ],
+    "TestCaseInvalid": [
+        {
+            "email": "",
+            "password": "$Abc@1234%",
+            "expected": "This is a required field."
+        },
+        {
+            "email": "catna@vcatna.com",
+            "password": "",
+            "expected": "This is a required field."
+        },
+        {
+            "email": "",
+            "password": "",
+            "expected": "This is a required field."
+        },
+        {
+            "email": "a@a.aa",
+            "password": "a",
+            "expected": "The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later."
+        },
+        {
+            "email": "a",
+            "password": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        },
+        {
+            "email": "a",
+            "password": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        },
+        {
+            "email": "a",
+            "password": "",
+            "expected": [
+                "Please enter a valid email address (Ex: johndoe@domain.com).",
+                "This is a required field."
+            ]
+        },
+        {
+            "email": "a@a",
+            "password": "$Abc@1234%",
+            "expected": "Please enter a valid email address (Ex: johndoe@domain.com)."
+        }
+    ]
+}
